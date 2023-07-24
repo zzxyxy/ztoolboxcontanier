@@ -2,7 +2,7 @@ FROM ubuntu:22.10
 
 RUN apt-get -y update
 RUN apt-get -y upgrade
-RUN apt -y install git gnupg2 vim mc zsh inetutils-ping net-tools openssh-client curl wget iproute2 nmap ncat
+RUN apt -y install git gnupg2 vim mc zsh inetutils-ping net-tools openssh-client curl wget iproute2 nmap ncat jq
 RUN curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add
 RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 RUN curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
